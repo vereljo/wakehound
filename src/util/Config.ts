@@ -1,11 +1,10 @@
-const allBrowsers = ['chromium', 'firefox', 'webkit'];
-
-const chrome  = ['chromium'];
+import { ChromiumBrowser } from 'playwright/types/types';
+import { chromium } from 'playwright';
 
 export default {
-  browsers: chrome,
+  browsers: [ chromium ],
   screenshotsDirs: {
-    ACC: '/screenshots/ACC',
-    TST: '/screenshots/TST',
+    ACC: './screenshots/ACC',
+    TST: './screenshots/TST',
   }
 };

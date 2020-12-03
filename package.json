@@ -4,8 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "run": "node dist/index.js",
-    "babel": "npx babel src/** --out-dir dist -- extenstions .tss"
+    "dist": "node dist/index.js",
+    "babel": "npx babel src/** --out-dir dist --extensions .ts",
+    "babel-watch": "npx babel src/** --out-dir dist --extensions .ts --watch"
   },
   "dependencies": {
     "@babel/cli": "^7.10.5",
